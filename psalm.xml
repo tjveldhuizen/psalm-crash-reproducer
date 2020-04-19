@@ -1,0 +1,13 @@
+<psalm
+        errorLevel="7"
+        autoloader="bin/.phpunit/phpunit-8.5-0/vendor/autoload.php"
+>
+    <projectFiles>
+        <directory name="tests"/>
+    </projectFiles>
+    <plugins>
+        <pluginClass xmlns="https://getpsalm.org/schema/config" class="Psalm\SymfonyPsalmPlugin\Plugin">
+            <containerXml>var/cache/dev/srcApp_KernelDevDebugContainer.xml</containerXml>
+        </pluginClass>
+    </plugins>
+</psalm>
